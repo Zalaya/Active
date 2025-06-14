@@ -1,0 +1,10 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "projects": "Projects",
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "settings": "Settings",
+    "profile": "Profile"
+  }
+}
