@@ -1,6 +1,6 @@
 import type { ComponentType, SVGProps } from "react";
 
-import { HomeIcon, FolderIcon, ClipboardIcon, CalendarIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/outline";
+import { HomeIcon, ClipboardIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/outline";
 import { SidebarSection } from "@/components/Sidebar/SidebarSection.tsx";
 
 export type NavItem = {
@@ -12,9 +12,7 @@ export type NavItem = {
 
 const topItems: NavItem[] = [
   { icon: HomeIcon, fallback: "Home", key: "sidebar.home", path: "/" },
-  { icon: FolderIcon, fallback: "Projects", key: "sidebar.projects", path: "/projects" },
   { icon: ClipboardIcon, fallback: "Tasks", key: "sidebar.tasks", path: "/tasks" },
-  { icon: CalendarIcon, fallback: "Calendar", key: "sidebar.calendar", path: "/calendar" }
 ];
 
 const bottomItems: NavItem[] = [

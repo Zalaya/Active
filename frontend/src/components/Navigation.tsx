@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Settings } from "@/pages/Settings";
+import { Settings } from "@/pages/Settings.tsx";
 
 export const Navigation = () => (
   <Routes>

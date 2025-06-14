@@ -1,6 +1,6 @@
-import { Layout } from "@/Layout.tsx";
+import { Layout } from "@/components/Layout.tsx";
 import { BrowserRouter } from "react-router-dom";
-import { Navigation } from "@/Navigation.tsx";
+import { Navigation } from "@/components/Navigation.tsx";
 
 export const App = () => {
   return (
