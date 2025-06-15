@@ -1,9 +1,6 @@
 {
   "sidebar": {
     "home": "Inicio",
-    "projects": "Proyectos",
-    "tasks": "Tareas",
-    "calendar": "Calendario",
     "settings": "Configuración",
     "profile": "Perfil"
   }
