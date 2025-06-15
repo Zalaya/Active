@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 
-import type { NavItem } from "@/components/Sidebar/Sidebar.tsx";
 import { SidebarButton } from "@/components/Sidebar/SidebarButton.tsx";
+import type { Route } from "@/components/Navigation/Navigation.types.ts";
 
 interface SidebarSectionProps {
-  items: NavItem[];
+  items: Route[];
 }
 
 export const SidebarSection = ({ items }: SidebarSectionProps) => {

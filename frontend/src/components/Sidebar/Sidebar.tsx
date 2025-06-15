@@ -1,22 +1,5 @@
-import type { ComponentType, SVGProps } from "react";
-
-import { HomeIcon, Cog6ToothIcon } from "@heroicons/react/24/outline";
-
 import { SidebarSection } from "@/components/Sidebar/SidebarSection.tsx";
-
-export type NavItem = {
-  icon: ComponentType<SVGProps<SVGSVGElement>>;
-  key: string;
-  path: string;
-};
-
-const topItems: NavItem[] = [
-  { icon: HomeIcon, key: "sidebar.home", path: "/home" }
-];
-
-const bottomItems: NavItem[] = [
-  { icon: Cog6ToothIcon, key: "sidebar.settings", path: "/settings" }
-];
+import { bottomItems, topItems } from "@/components/Sidebar/Sidebar.constants.ts";
 
 export const Sidebar = () => {
   return (

@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { Layout } from "@/components/Layout.tsx";
-import { Navigation } from "@/components/Navigation.tsx";
+import { Navigation } from "@/components/Navigation/Navigation.tsx";
 
 export const App = () => {
   return (
