@@ -2,6 +2,7 @@ import type { ComponentType, SVGProps } from "react";
 
 import { HomeIcon, ClipboardIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/outline";
 import { SidebarSection } from "@/components/Sidebar/SidebarSection.tsx";
+import { useSidebar } from "@/contexts/SidebarContext.tsx";
 
 export type NavItem = {
   icon: ComponentType<SVGProps<SVGSVGElement>>;
@@ -21,11 +22,22 @@ const bottomItems: NavItem[] = [
 ];
 
 export const Sidebar = () => {
+  const { mode } = useSidebar();
+  const isHover = mode === "hover";
+
   return (
-    <div className="fixed top-0 left-0 z-50 group/sidebar">
-      <div className="w-0 hover:w-20 transition-all duration-300 bg-white border-r flex justify-center">
+    <div className={`fixed top-0 left-0 z-50 ${isHover ? "group/sidebar" : ""}`}>
+      <div
+        className={`transition-all duration-300 bg-white border-r flex justify-center 
+          ${isHover ? "w-0 hover:w-20" : "w-20"}
+        `}
+      >
         <div className="relative flex justify-center items-center w-full">
-          <div className="flex flex-col justify-between items-center py-4 opacity-0 h-screen group-hover/sidebar:opacity-100 transition-opacity duration-200">
+          <div
+            className={`flex flex-col justify-between items-center py-4 h-screen transition-opacity duration-200
+              ${isHover ? "opacity-0 group-hover/sidebar:opacity-100" : "opacity-100"}
+            `}
+          >
             <SidebarSection items={topItems} />
             <SidebarSection items={bottomItems} />
           </div>

@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from "react";
+
 import { Sidebar } from "@/components/Sidebar/Sidebar.tsx";
 
 export const Layout = ({ children }: PropsWithChildren) => {

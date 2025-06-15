@@ -10,6 +10,7 @@
     "clean": "rimraf node_modules/ package-lock.json"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.1.10",
     "i18next": "^25.2.1",
