@@ -7,7 +7,7 @@ import { Profile } from "@/pages/Profile.tsx";
 
 export const Navigation = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/home" element={<Home />} />
     <Route path="/tasks" element={<Tasks/>} />
     <Route path="/settings" element={<Settings />} />
     <Route path="/profile" element={<Profile />} />

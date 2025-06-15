@@ -12,8 +12,8 @@ export const SidebarSection = ({ items }: SidebarSectionProps) => {
 
   return (
     <div className="flex flex-col gap-6 items-center">
-      {items.map(({ icon, key, fallback, path }) => (
-        <SidebarButton key={key} icon={icon} label={t(key, fallback)} path={path} />
+      {items.map(({ icon, key, path }) => (
+        <SidebarButton key={key} icon={icon} label={t(key)} path={path} />
       ))}
     </div>
   );
