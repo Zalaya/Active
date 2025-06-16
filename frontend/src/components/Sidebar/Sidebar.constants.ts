@@ -8,7 +8,7 @@ import type { SidebarSection } from "@/components/Sidebar/Sidebar.types.ts";
 
 export const sections: SidebarSection[] = [
   {
-    id: "main",
+    id: "top",
     items: [
       {
         path: "/home",
@@ -19,7 +19,7 @@ export const sections: SidebarSection[] = [
     ]
   },
   {
-    id: "settings",
+    id: "bottom",
     items: [
       {
         path: "/profile",

@@ -13,7 +13,7 @@ export const SidebarButton = ({ icon: Icon, path }: SidebarButtonProps) => {
       {({ isActive }) => (
         <div
           className={`flex items-center p-3 rounded-md transition-all duration-200 cursor-pointer shadow-md
-            ${isActive ? "bg-gray-300 text-black" : "text-gray-500 hover:text-black hover:bg-gray-200"}
+            ${isActive ? "bg-gray-200 text-black" : "text-gray-200 hover:text-black hover:bg-gray-200"}
           `}
         >
           <Icon className="h-6 w-6 transition-transform duration-200 transform" />
