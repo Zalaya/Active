@@ -2,13 +2,16 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Layout } from "@/components/Layout.tsx";
 import { Navigation } from "@/components/Navigation.tsx";
+import { SidebarProvider } from "@/contexts/SidebarContext.tsx";
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Navigation />
-      </Layout>
-    </BrowserRouter>
+    <SidebarProvider>
+      <BrowserRouter>
+        <Layout>
+          <Navigation />
+        </Layout>
+      </BrowserRouter>
+    </SidebarProvider>
   );
 };
