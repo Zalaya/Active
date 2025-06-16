@@ -1,19 +1,16 @@
-import { useTranslation } from "react-i18next";
-
 import { SidebarButton } from "@/components/Sidebar/SidebarButton.tsx";
-import type { Route } from "@/components/Navigation/Navigation.types.ts";
+
+import type { SidebarItem } from "@/components/Sidebar/Sidebar.types.ts";
 
 interface SidebarSectionProps {
-  items: Route[];
+  items: SidebarItem[];
 }
 
 export const SidebarSection = ({ items }: SidebarSectionProps) => {
-  const { t } = useTranslation();
-
   return (
-    <div className="flex flex-col gap-6 items-center">
+    <div className="flex flex-col gap-4 items-center">
       {items.map(({ icon, key, path }) => (
-        <SidebarButton key={key} icon={icon} label={t(key)} path={path} />
+        <SidebarButton key={key} icon={icon} path={path} />
       ))}
     </div>
   );

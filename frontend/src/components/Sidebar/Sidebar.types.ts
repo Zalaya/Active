@@ -1,9 +1,13 @@
 import type { ComponentType, SVGProps } from "react";
 
-export type Route = {
+export type SidebarItem = {
   path: string;
   element: ComponentType;
   icon: ComponentType<SVGProps<SVGSVGElement>>;
   key: string;
-  position: "top" | "bottom";
+};
+
+export type SidebarSection = {
+  id: string;
+  items: SidebarItem[];
 };
